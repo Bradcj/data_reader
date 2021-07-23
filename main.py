@@ -5,7 +5,7 @@ from render import render_table
 
 
 def main():
-    books = load_db('../book-db.csv')
+    books = load_db('./helper_files/book-db.csv')
     repository = BookRepository(books)
     inputs = input("Enter Title -> ")
     result: list[Book] = repository.find_length(inputs)
